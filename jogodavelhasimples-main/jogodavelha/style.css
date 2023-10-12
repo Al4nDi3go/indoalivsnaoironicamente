@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2px;
+    background-color: #333; /* Cor de fundo da grade */
+    max-width: 300px;
+    width: 100%;
+}
+
+.tile {
+    border: 1px solid white;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+    background-color: #7e7e7e; 
+}
+
+.tile:hover {
+    background-color: #ff9191;
+}
+
+.announcer {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#reset {
+    background-color: #333; /* Cor do botão Reset */
+    color: white;
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.result {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+}
